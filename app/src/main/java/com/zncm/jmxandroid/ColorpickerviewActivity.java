@@ -6,6 +6,9 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.zncm.jmxandroid.view.SmoothImageView;
 
+/**
+ * https://github.com/skydoves/ColorPickerView
+ */
 public class ColorpickerviewActivity extends AppCompatActivity {
 
     Context ctx;
