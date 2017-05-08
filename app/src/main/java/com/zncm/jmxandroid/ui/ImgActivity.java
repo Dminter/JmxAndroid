@@ -1,4 +1,4 @@
-package com.zncm.jmxandroid;
+package com.zncm.jmxandroid.ui;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -14,6 +14,8 @@ import android.view.View;
 import android.view.animation.DecelerateInterpolator;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+
+import com.zncm.jmxandroid.R;
 
 public class ImgActivity extends AppCompatActivity {
 

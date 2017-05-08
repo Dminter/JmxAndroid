@@ -1,12 +1,12 @@
-package com.zncm.jmxandroid;
+package com.zncm.jmxandroid.ui;
 
 import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.ImageView;
 
+import com.zncm.jmxandroid.R;
+import com.zncm.jmxandroid.utils.Xutils;
 import com.zncm.jmxandroid.view.SmoothImageView;
 
 public class SmoothImgActivity extends AppCompatActivity {

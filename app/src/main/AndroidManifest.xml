@@ -2,11 +2,16 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.zncm.jmxandroid">
 
+
+
+
+    <uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
+        android:name=".base.MyApp"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
             <intent-filter>
@@ -16,10 +21,13 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ImgActivity"/>
-        <activity android:name=".GlobalLocalAct"/>
-        <activity android:name=".SmoothImgActivity"/>
-        <activity android:name=".ColorpickerviewActivity"/>
+        <activity android:name=".ui.ImgActivity"/>
+        <activity android:name=".ui.GlobalLocalAct"/>
+        <activity android:name=".ui.SmoothImgActivity"/>
+        <activity android:name=".ui.ColorpickerviewActivity"/>
+        <activity android:name=".ui.BaseViewActivity"/>
+        <activity android:name=".volley.VolleyDemo"/>
+        <activity android:name=".hook.ProxyActivity"/>
     </application>
 
 </manifest>

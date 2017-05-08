@@ -1,4 +1,4 @@
-package com.zncm.jmxandroid;
+package com.zncm.jmxandroid.ui;
 
 import android.app.Activity;
 import android.graphics.Point;
@@ -8,6 +8,8 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.zncm.jmxandroid.R;
 
 public class GlobalLocalAct extends Activity {
     private int lastX = 0;
