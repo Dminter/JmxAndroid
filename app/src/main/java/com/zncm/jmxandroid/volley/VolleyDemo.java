@@ -80,8 +80,8 @@ public class VolleyDemo extends BaseAc {
 
 
         ImageLoader imageLoader2 = new ImageLoader(MyApp.requestQueue, new MyBitmapCache());
-        networkImageView.setDefaultImageResId(R.mipmap.ic_launcher);
-        networkImageView.setErrorImageResId(R.mipmap.ic_launcher);
+        networkImageView.setDefaultImageResId(R.drawable.ic_info);
+        networkImageView.setErrorImageResId(R.drawable.ic_info);
         networkImageView.setImageUrl(imgUrl, imageLoader2);
     }
 

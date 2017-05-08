@@ -8,7 +8,7 @@
     <uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:name=".base.MyApp"
@@ -26,6 +26,7 @@
         <activity android:name=".ui.SmoothImgActivity"/>
         <activity android:name=".ui.ColorpickerviewActivity"/>
         <activity android:name=".ui.BaseViewActivity"/>
+        <activity android:name=".ui.ToastyActivity"/>
         <activity android:name=".volley.VolleyDemo"/>
         <activity android:name=".hook.ProxyActivity"/>
     </application>

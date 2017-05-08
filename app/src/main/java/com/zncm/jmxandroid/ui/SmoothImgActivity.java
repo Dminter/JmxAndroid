@@ -20,7 +20,7 @@ public class SmoothImgActivity extends AppCompatActivity {
         setContentView(R.layout.activity_imgsmooth);
         ctx = this;
         imageView = (SmoothImageView) findViewById(R.id.imageView);
-        imageView.setImageDrawable(getResources().getDrawable(R.mipmap.img1));
+        imageView.setImageDrawable(getResources().getDrawable(R.drawable.img1));
         imageView.setOnTransformListener(new SmoothImageView.TransformListener() {
             @Override
             public void onTransformComplete(int mode) {

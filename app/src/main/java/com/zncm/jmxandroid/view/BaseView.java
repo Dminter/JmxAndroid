@@ -192,7 +192,7 @@ public class BaseView extends View {
         /**
          *画图片
          */
-        Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.mipmap.ic_launcher);
+        Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.ic_launcher);
         canvas.drawBitmap(bitmap, 100,800, paint);
 
 

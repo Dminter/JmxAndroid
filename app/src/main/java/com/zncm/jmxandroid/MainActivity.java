@@ -13,6 +13,7 @@ import com.zncm.jmxandroid.ui.ColorpickerviewActivity;
 import com.zncm.jmxandroid.ui.GlobalLocalAct;
 import com.zncm.jmxandroid.ui.ImgActivity;
 import com.zncm.jmxandroid.ui.SmoothImgActivity;
+import com.zncm.jmxandroid.ui.ToastyActivity;
 import com.zncm.jmxandroid.volley.VolleyDemo;
 
 public class MainActivity extends BaseAc implements View.OnClickListener {
@@ -55,6 +56,9 @@ public class MainActivity extends BaseAc implements View.OnClickListener {
                 break;
             case R.id.BaseViewActivity:
                 startActivity(new Intent(ctx, BaseViewActivity.class));
+                break;
+            case R.id.ToastyActivity:
+                startActivity(new Intent(ctx, ToastyActivity.class));
                 break;
 
             default:

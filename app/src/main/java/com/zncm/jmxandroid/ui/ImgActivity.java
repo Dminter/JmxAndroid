@@ -33,7 +33,7 @@ public class ImgActivity extends AppCompatActivity {
         if (mCurrentAnimator != null) {
             mCurrentAnimator.cancel();
         }
-        imageView.setImageDrawable(getResources().getDrawable(R.mipmap.img1));
+        imageView.setImageDrawable(getResources().getDrawable(R.drawable.img1));
         final Rect startBounds = new Rect(300, 300, 300, 300);
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
