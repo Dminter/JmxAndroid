@@ -27,4 +27,5 @@ dependencies {
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
     compile 'com.github.GrenderG:Toasty:1.2.3'
     compile project(path: ':imlibrary')
+    compile project(path: ':DroidPlugin')
 }

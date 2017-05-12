@@ -6,6 +6,7 @@
 
 
     <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -29,6 +30,17 @@
         <activity android:name=".ui.ToastyActivity"/>
         <activity android:name=".volley.VolleyDemo"/>
         <activity android:name=".hook.ProxyActivity"/>
+        <activity android:name=".activityshortcut.ActivityShortcut"/>
+        <activity android:name=".droidplugin.MyActivity"/>
+        <activity android:name=".ui.AZViewActivity"/>
+
+
+        <activity-alias android:name=".AddActivityShortcut"
+                        android:targetActivity=".activityshortcut.ActivityShortcut">
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_SHORTCUT" />
+            </intent-filter>
+        </activity-alias>
     </application>
 
 </manifest>

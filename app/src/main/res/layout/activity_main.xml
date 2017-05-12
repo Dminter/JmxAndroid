@@ -20,6 +20,24 @@
         android:padding="20dp">
 
         <Button
+                android:id="@+id/AZViewActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClick"
+                android:text="AZViewActivity"/>
+        <Button
+                android:id="@+id/MyActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClick"
+                android:text="MyActivity"/>
+        <Button
+                android:id="@+id/ActivityShortcut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onClick"
+                android:text="ActivityShortcut"/>
+        <Button
                 android:id="@+id/ToastyActivity"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

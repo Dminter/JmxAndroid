@@ -5,12 +5,13 @@ import android.content.Context;
 
 import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.Volley;
+import com.morgoo.droidplugin.PluginApplication;
 
 /**
  * Created by jiaomx on 2017/5/3.
  */
 
-public class MyApp extends Application {
+public class MyApp extends PluginApplication {
 
     public static RequestQueue requestQueue;
     public static MyApp instance;

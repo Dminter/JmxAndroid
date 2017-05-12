@@ -13,6 +13,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.zncm.jmxandroid.R;
+import com.zncm.jmxandroid.base.MyApp;
 
 /**
  * Created by jiaomx on 2017/5/8.
@@ -54,6 +55,10 @@ public class Tip {
     }
 
 
+
+
+
+
     public static Drawable tintIcon(Drawable drawable, int tintColor) {
         drawable.setColorFilter(tintColor, PorterDuff.Mode.SRC_IN);
         return drawable;
@@ -62,6 +67,14 @@ public class Tip {
     public static Toast info(Context context, CharSequence msg) {
         return custom(context, msg, getDrawable(context, R.drawable.ic_info_outline_white_48dp), textColor, Toast.LENGTH_SHORT, true, true);
     }
+
+
+
+    public static void tShort(Context context,CharSequence msg) {
+         custom(context, msg, getDrawable(context, R.drawable.ic_info_outline_white_48dp), textColor, Toast.LENGTH_SHORT, true, true).show();
+    }
+
+
 
     public static Toast custom(Context context, CharSequence msg, Drawable icon, int tintColor, int duration, boolean withIcon, boolean shouldTint) {
 

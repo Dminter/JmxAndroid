@@ -3,11 +3,13 @@ package com.zncm.jmxandroid;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.zncm.imbrary.ImActivity;
+import com.zncm.jmxandroid.activityshortcut.ActivityShortcut;
 import com.zncm.jmxandroid.base.BaseAc;
+import com.zncm.jmxandroid.droidplugin.MyActivity;
+import com.zncm.jmxandroid.ui.AZViewActivity;
 import com.zncm.jmxandroid.ui.BaseViewActivity;
 import com.zncm.jmxandroid.ui.ColorpickerviewActivity;
 import com.zncm.jmxandroid.ui.GlobalLocalAct;
@@ -60,7 +62,15 @@ public class MainActivity extends BaseAc implements View.OnClickListener {
             case R.id.ToastyActivity:
                 startActivity(new Intent(ctx, ToastyActivity.class));
                 break;
-
+            case R.id.ActivityShortcut:
+                startActivity(new Intent(ctx, ActivityShortcut.class));
+                break;
+            case R.id.MyActivity:
+                startActivity(new Intent(ctx, MyActivity.class));
+                break;
+            case R.id.AZViewActivity:
+                startActivity(new Intent(ctx, AZViewActivity.class));
+                break;
             default:
                 break;
         }
