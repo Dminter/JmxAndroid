@@ -13,7 +13,12 @@ public class NullActivity extends BaseAc {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_null);
+
         ctx = this;
+    }
+
+    @Override
+    protected int getLayoutResource() {
+        return R.layout.activity_null;
     }
 }

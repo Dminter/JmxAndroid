@@ -9,10 +9,16 @@
 
     <include layout="@layout/toolbar"/>
 
+    <TextView
+            android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="HELLO WORLD~"/>
 
-    <com.zncm.jmxandroid.view.AZView
+    <Button
+            android:id="@+id/btnMyKotlinDemo2"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-
+            android:layout_height="wrap_content"
+            android:text="MyKotlinDemo2"
+    />
 
 </LinearLayout>

@@ -43,7 +43,7 @@ public class ActivityShortcut extends BaseAc {
     {
         super.onCreate(savedInstanceState);
         setTitle(R.string.shortcut_prompt);
-        setContentView(R.layout.ac_main);
+
 
         this.startIntent = getIntent();
         this.packageManager = getPackageManager();
@@ -90,6 +90,11 @@ public class ActivityShortcut extends BaseAc {
             public void onClick(View v) {
             }
         });
+    }
+
+    @Override
+    protected int getLayoutResource() {
+        return R.layout.ac_main;
     }
 
     @Override

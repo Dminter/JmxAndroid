@@ -19,7 +19,7 @@ public class ToastyActivity extends BaseAc implements View.OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_toasty);
+
         ctx = this;
         Toasty.Config.getInstance()
                 .setErrorColor(getResources().getColor(R.color.material_amber_100)) // optional
@@ -40,6 +40,11 @@ public class ToastyActivity extends BaseAc implements View.OnClickListener {
                 .setTextColor(getResources().getColor(R.color.material_green_300)) // optional
                 .apply();
 
+    }
+
+    @Override
+    protected int getLayoutResource() {
+        return R.layout.activity_toasty;
     }
 
     /**

@@ -39,7 +39,7 @@ public class VolleyDemo extends BaseAc {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_volleydemo);
+
         ButterKnife.bind(this);
 //        volleyGet();
 //        volleyPost();
@@ -48,6 +48,11 @@ public class VolleyDemo extends BaseAc {
         volleyImg();
 
 
+    }
+
+    @Override
+    protected int getLayoutResource() {
+        return R.layout.activity_volleydemo;
     }
 
     private void volleyImg() {

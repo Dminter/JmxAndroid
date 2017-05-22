@@ -3,6 +3,7 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:orientation="vertical"
+              android:background="@color/colorBg"
 >
 
     <include layout="@layout/toolbar"/>
@@ -18,87 +19,79 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="20dp">
-
+        <Button
+                android:id="@+id/MyKotlinListView"
+                style="@style/MyButton"
+                android:text="MyKotlinListView"/>
+        <Button
+                android:id="@+id/MyHandlerAc"
+                style="@style/MyButton"
+                android:text="MyHandlerAc"/>
+        <Button
+                android:id="@+id/MyHandlerAcJ"
+                style="@style/MyButton"
+                android:text="MyHandlerAcJ"/>
+        <Button
+                android:id="@+id/MyKotlinDemo"
+                style="@style/MyButton"
+                android:text="MyKotlinDemo"/>
         <Button
                 android:id="@+id/AZViewActivity"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="onClick"
+                style="@style/MyButton"
                 android:text="AZViewActivity"/>
+
         <Button
                 android:id="@+id/MyActivity"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="onClick"
+                style="@style/MyButton"
                 android:text="MyActivity"/>
         <Button
                 android:id="@+id/ActivityShortcut"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="onClick"
+                style="@style/MyButton"
                 android:text="ActivityShortcut"/>
         <Button
                 android:id="@+id/ToastyActivity"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="onClick"
+                style="@style/MyButton"
                 android:text="ToastyActivity"/>
         <Button
                 android:id="@+id/volleydemo"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="onClick"
+                style="@style/MyButton"
                 android:text="VolleyDemo"/>
         <Button
                 android:id="@+id/BaseViewActivity"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="onClick"
+                style="@style/MyButton"
                 android:text="BaseViewActivity"/>
 
 
         <Button
                 android:id="@+id/btn1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="onClick"
+                style="@style/MyButton"
                 android:text="大图浏览效果" />
 
         <Button
                 android:id="@+id/btn2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="onClick"
+                style="@style/MyButton"
                 android:text="GlobalLocalAct" />
 
         <Button
                 android:id="@+id/btn3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="onClick"
+                style="@style/MyButton"
                 android:text="SmoothImgActivity" />
 
         <Button
                 android:id="@+id/btn4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="onClick"
+                style="@style/MyButton"
                 android:text="to mode" />
 
 
         <Button
                 android:id="@+id/colorpickerview"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="onClick"
+                style="@style/MyButton"
                 android:text="colorpickerview"/>
 
 
         <Button
                 android:id="@+id/hookaactivity"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="onClick"
+                style="@style/MyButton"
                 android:text="hookaactivity"/>
 
 

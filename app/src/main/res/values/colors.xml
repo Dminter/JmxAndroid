@@ -3,16 +3,7 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-
-
-
-
-
-
-
-
-
-
+    <color name="colorBg">@color/material_grey_50</color>
 
 
     <color name="material_red_50">#FFEBEE</color>

@@ -15,7 +15,12 @@ public class BaseViewActivity extends BaseAc {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_baseview);
+
         ctx = this;
+    }
+
+    @Override
+    protected int getLayoutResource() {
+        return R.layout.activity_baseview;
     }
 }

@@ -33,6 +33,11 @@
         <activity android:name=".activityshortcut.ActivityShortcut"/>
         <activity android:name=".droidplugin.MyActivity"/>
         <activity android:name=".ui.AZViewActivity"/>
+        <activity android:name=".mykotlin.MyKotlinDemo"/>
+        <activity android:name=".mykotlin.MyKotlinDemo2"/>
+        <activity android:name=".mykotlin.MyKotlinListView"/>
+        <activity android:name=".os.MyHandlerAc"/>
+        <activity android:name=".os.java.MyHandlerAcJ"/>
 
 
         <activity-alias android:name=".AddActivityShortcut"

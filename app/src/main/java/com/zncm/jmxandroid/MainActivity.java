@@ -9,6 +9,10 @@ import com.zncm.imbrary.ImActivity;
 import com.zncm.jmxandroid.activityshortcut.ActivityShortcut;
 import com.zncm.jmxandroid.base.BaseAc;
 import com.zncm.jmxandroid.droidplugin.MyActivity;
+import com.zncm.jmxandroid.mykotlin.MyKotlinDemo;
+import com.zncm.jmxandroid.mykotlin.MyKotlinListView;
+import com.zncm.jmxandroid.os.MyHandlerAc;
+import com.zncm.jmxandroid.os.java.MyHandlerAcJ;
 import com.zncm.jmxandroid.ui.AZViewActivity;
 import com.zncm.jmxandroid.ui.BaseViewActivity;
 import com.zncm.jmxandroid.ui.ColorpickerviewActivity;
@@ -25,15 +29,29 @@ public class MainActivity extends BaseAc implements View.OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+
         ctx = this;
+    }
+
+    @Override
+    protected int getLayoutResource() {
+        return R.layout.activity_main;
     }
 
 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.btn1:
+            case R.id.MyKotlinListView:
+                startActivity(new Intent(ctx, MyKotlinListView.class));
+                break;
+                case R.id.MyHandlerAcJ:
+                startActivity(new Intent(ctx, MyHandlerAcJ.class));
+                break;
+                case R.id.MyHandlerAc:
+                startActivity(new Intent(ctx, MyHandlerAc.class));
+                break;
+                case R.id.btn1:
                 startActivity(new Intent(ctx, ImgActivity.class));
                 break;
             case R.id.btn2:
@@ -70,6 +88,9 @@ public class MainActivity extends BaseAc implements View.OnClickListener {
                 break;
             case R.id.AZViewActivity:
                 startActivity(new Intent(ctx, AZViewActivity.class));
+                break;
+                case R.id.MyKotlinDemo:
+                startActivity(new Intent(ctx, MyKotlinDemo.class));
                 break;
             default:
                 break;

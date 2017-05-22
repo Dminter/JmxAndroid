@@ -5,6 +5,7 @@
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:paddingLeft="8dp"
+        android:background="@color/colorBg"
         android:paddingRight="8dp">
 
 
