@@ -38,6 +38,8 @@
         <activity android:name=".mykotlin.MyKotlinListView"/>
         <activity android:name=".os.MyHandlerAc"/>
         <activity android:name=".os.java.MyHandlerAcJ"/>
+        <activity android:name=".support.TabLayoutAc"/>
+        <activity android:name=".baseview.ZoomControlsAc"/>
 
 
         <activity-alias android:name=".AddActivityShortcut"

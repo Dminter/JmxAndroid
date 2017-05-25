@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@color/colorBg"
+>
+
+    <include layout="@layout/toolbar"/>
+
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TableLayout!"/>
+
+    <LinearLayout
+            android:id="@+id/mLinearLayout"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/material_green_100"
+            android:layout_height="wrap_content">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="mLinearLayout --> 里面分割线!--LinearLayout.SHOW_DIVIDER_MIDDLE"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="222222"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SSSSSSSS"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="XXX"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7777777"/>
+
+    </LinearLayout>
+
+
+    <android.support.design.widget.TabLayout
+            android:id="@+id/mTabLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabMode="scrollable"
+
+
+    >
+
+    </android.support.design.widget.TabLayout>
+    <android.support.design.widget.TabLayout
+            android:id="@+id/mTabLayout"
+            app:tabSelectedTextColor="@color/material_amber_400"
+            app:tabTextColor="@color/material_red_800"
+            app:tabBackground="@color/material_light_green_700"
+            app:tabTextAppearance="@style/TabLayout.TabText"
+            app:tabIndicatorHeight="6dp"
+            android:padding="5dp"
+            app:tabPadding="4dp"
+            app:tabContentStart="30dp"
+            app:tabMaxWidth="300dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    </android.support.design.widget.TabLayout>
+
+
+    <android.support.design.widget.TabLayout
+            android:id="@+id/mTabLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabMode="scrollable"
+    >
+
+    </android.support.design.widget.TabLayout>
+    <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+    </android.support.v4.view.ViewPager>
+</LinearLayout>

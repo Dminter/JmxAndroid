@@ -8,11 +8,14 @@ import android.view.View;
 import com.zncm.imbrary.ImActivity;
 import com.zncm.jmxandroid.activityshortcut.ActivityShortcut;
 import com.zncm.jmxandroid.base.BaseAc;
+import com.zncm.jmxandroid.baseview.ZoomControlsAc;
 import com.zncm.jmxandroid.droidplugin.MyActivity;
+import com.zncm.jmxandroid.hook.HookAActivity;
 import com.zncm.jmxandroid.mykotlin.MyKotlinDemo;
 import com.zncm.jmxandroid.mykotlin.MyKotlinListView;
 import com.zncm.jmxandroid.os.MyHandlerAc;
 import com.zncm.jmxandroid.os.java.MyHandlerAcJ;
+import com.zncm.jmxandroid.support.TabLayoutAc;
 import com.zncm.jmxandroid.ui.AZViewActivity;
 import com.zncm.jmxandroid.ui.BaseViewActivity;
 import com.zncm.jmxandroid.ui.ColorpickerviewActivity;
@@ -42,7 +45,13 @@ public class MainActivity extends BaseAc implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.MyKotlinListView:
+            case R.id.ZoomControlsAc:
+                startActivity(new Intent(ctx, ZoomControlsAc.class));
+                break;
+                case R.id.TabLayoutAc:
+                startActivity(new Intent(ctx, TabLayoutAc.class));
+                break;
+                case R.id.MyKotlinListView:
                 startActivity(new Intent(ctx, MyKotlinListView.class));
                 break;
                 case R.id.MyHandlerAcJ:
@@ -68,7 +77,15 @@ public class MainActivity extends BaseAc implements View.OnClickListener {
                 break;
             case R.id.hookaactivity:
                 // Caused by: android.content.ActivityNotFoundException: Unable to find explicit activity class {com.zncm.jmxandroid/com.zncm.jmxandroid.hook.HookAActivity}; have you declared this activity in your AndroidManifest.xml?
-//                startActivity(new Intent(ctx, HookAActivity.class));
+                startActivity(new Intent(ctx, HookAActivity.class));
+//                Class<?> myClass = null;
+//                try {
+//                    myClass = Class.forName("com.zncm.jmxandroid.ui.ColorpickerviewActivity");
+//                } catch (ClassNotFoundException e) {
+//                    e.printStackTrace();
+//                }
+//                Intent intent = new Intent(this,myClass);
+//                startActivity(intent);
                 break;
 
             case R.id.volleydemo:
