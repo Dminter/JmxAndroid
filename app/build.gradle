@@ -34,4 +34,5 @@ dependencies {
     compile project(path: ':DroidPlugin')
     compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
     compile 'org.jetbrains.anko:anko-sdk25:0.10.0-beta-1'
+    compile 'com.wei.android.lib:fingerprintidentify:1.1.4'
 }

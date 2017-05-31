@@ -10,11 +10,13 @@ import com.zncm.jmxandroid.activityshortcut.ActivityShortcut;
 import com.zncm.jmxandroid.base.BaseAc;
 import com.zncm.jmxandroid.baseview.ZoomControlsAc;
 import com.zncm.jmxandroid.droidplugin.MyActivity;
+import com.zncm.jmxandroid.github.FingerprintIdentifyAc;
 import com.zncm.jmxandroid.hook.HookAActivity;
 import com.zncm.jmxandroid.mykotlin.MyKotlinDemo;
 import com.zncm.jmxandroid.mykotlin.MyKotlinListView;
 import com.zncm.jmxandroid.os.MyHandlerAc;
 import com.zncm.jmxandroid.os.java.MyHandlerAcJ;
+import com.zncm.jmxandroid.support.FabAc;
 import com.zncm.jmxandroid.support.TabLayoutAc;
 import com.zncm.jmxandroid.ui.AZViewActivity;
 import com.zncm.jmxandroid.ui.BaseViewActivity;
@@ -45,7 +47,16 @@ public class MainActivity extends BaseAc implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.ZoomControlsAc:
+            case R.id.FingerprintIdentifyAc:
+                startActivity(new Intent(ctx, FingerprintIdentifyAc.class));
+                break;
+
+
+                case R.id.FabAc:
+                startActivity(new Intent(ctx, FabAc.class));
+                break;
+
+                case R.id.ZoomControlsAc:
                 startActivity(new Intent(ctx, ZoomControlsAc.class));
                 break;
                 case R.id.TabLayoutAc:
