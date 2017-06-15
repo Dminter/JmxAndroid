@@ -40,16 +40,25 @@
         <activity android:name=".mykotlin.MyKotlinDemo"/>
         <activity android:name=".mykotlin.MyKotlinDemo2"/>
         <activity android:name=".mykotlin.MyKotlinListView"/>
+
+
+
         <activity android:name=".os.MyHandlerAc"/>
+        <activity android:name=".os.AudioAc"/>
         <activity android:name=".os.java.MyHandlerAcJ"/>
 
         <activity android:name=".support.TabLayoutAc"/>
         <activity android:name=".support.FabAc"/>
 
         <activity android:name=".baseview.ZoomControlsAc"/>
+        <activity android:name=".baseview.MyPaintAc"/>
+        <activity android:name=".baseview.ColorSelViewAc"/>
+        <activity android:name=".baseview.PicEditAc"/>
 
 
         <activity android:name=".github.FingerprintIdentifyAc"/>
+        <activity android:name=".github.GifActivity"/>
+        <activity android:name=".github.PicEditActivity"/>
 
 
         <activity-alias android:name=".AddActivityShortcut"

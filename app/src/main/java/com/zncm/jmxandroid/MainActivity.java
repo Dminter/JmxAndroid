@@ -8,12 +8,18 @@ import android.view.View;
 import com.zncm.imbrary.ImActivity;
 import com.zncm.jmxandroid.activityshortcut.ActivityShortcut;
 import com.zncm.jmxandroid.base.BaseAc;
+import com.zncm.jmxandroid.baseview.ColorSelViewAc;
+import com.zncm.jmxandroid.baseview.MyPaintAc;
+import com.zncm.jmxandroid.baseview.PicEditAc;
 import com.zncm.jmxandroid.baseview.ZoomControlsAc;
 import com.zncm.jmxandroid.droidplugin.MyActivity;
 import com.zncm.jmxandroid.github.FingerprintIdentifyAc;
+import com.zncm.jmxandroid.github.GifActivity;
+import com.zncm.jmxandroid.github.PicEditActivity;
 import com.zncm.jmxandroid.hook.HookAActivity;
 import com.zncm.jmxandroid.mykotlin.MyKotlinDemo;
 import com.zncm.jmxandroid.mykotlin.MyKotlinListView;
+import com.zncm.jmxandroid.os.AudioAc;
 import com.zncm.jmxandroid.os.MyHandlerAc;
 import com.zncm.jmxandroid.os.java.MyHandlerAcJ;
 import com.zncm.jmxandroid.support.FabAc;
@@ -47,7 +53,29 @@ public class MainActivity extends BaseAc implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.FingerprintIdentifyAc:
+            case R.id.PicEditAc:
+                startActivity(new Intent(ctx, PicEditAc.class));
+                break;
+                case R.id.ColorSelViewAc:
+                startActivity(new Intent(ctx, ColorSelViewAc.class));
+                break;
+   case R.id.MyPaintAc:
+                startActivity(new Intent(ctx, MyPaintAc.class));
+                break;
+
+                case R.id.PicEditActivity:
+                startActivity(new Intent(ctx, PicEditActivity.class));
+                break;
+
+                case R.id.GifActivity:
+                startActivity(new Intent(ctx, GifActivity.class));
+                break;
+       case R.id.AudioAc:
+                startActivity(new Intent(ctx, AudioAc.class));
+                break;
+
+
+                case R.id.FingerprintIdentifyAc:
                 startActivity(new Intent(ctx, FingerprintIdentifyAc.class));
                 break;
 

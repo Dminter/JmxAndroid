@@ -1,4 +1,4 @@
-package com.zncm.jmxandroid.ui;
+package com.zncm.jmxandroid;
 
 import android.content.Context;
 import android.os.Bundle;

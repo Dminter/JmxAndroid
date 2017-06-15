@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@color/colorBg"
+>
+
+    <include layout="@layout/toolbar"/>
+
+    <ScrollView android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+        <LinearLayout android:layout_width="match_parent"
+                      android:orientation="vertical"
+                      android:layout_height="match_parent">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hello World!"/>
+
+            <com.zncm.jmxandroid.view.PaintView
+                    android:id="@+id/mPaintView"
+                    android:visibility="gone"
+                    android:layout_width="400dp"
+                    android:layout_height="400dp"/>
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <Button
+                        android:id="@+id/undo"
+                        android:text="undo"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                <com.zncm.jmxandroid.view.ColorSelView
+                        android:id="@+id/mColorSelView"
+                        android:layout_width="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_toLeftOf="@+id/undo"
+                        android:layout_height="wrap_content">
+                </com.zncm.jmxandroid.view.ColorSelView>
+
+
+            </RelativeLayout>
+
+
+            <com.zncm.jmxandroid.view.TextFloatView
+                    android:id="@+id/mTextFloatView"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"/>
+
+
+            <EditText
+                    android:id="@+id/mEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="哈哈"
+
+            />
+
+            <Button
+                    android:id="@+id/editTextSure"
+                    android:text="editTextSure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:orientation="horizontal"
+                          android:layout_height="wrap_content">
+
+                <Button
+                        android:id="@+id/edit"
+                        android:text="edit"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"/>
+                <Button
+                        android:id="@+id/text"
+                        android:text="text"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"/>
+                <Button
+                        android:id="@+id/crop"
+                        android:text="crop"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

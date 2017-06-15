@@ -20,6 +20,34 @@
         android:orientation="vertical"
         android:padding="20dp">
         <Button
+                android:id="@+id/PicEditAc"
+                style="@style/MyButton"
+                android:text="PicEditAc"/>
+    <Button
+                android:id="@+id/ColorSelViewAc"
+                style="@style/MyButton"
+                android:text="ColorSelViewAc"/>
+
+        <Button
+                android:id="@+id/MyPaintAc"
+                style="@style/MyButton"
+                android:text="MyPaintAc"/>
+      <Button
+                android:id="@+id/PicEditActivity"
+                style="@style/MyButton"
+                android:text="PicEditActivity"/>
+
+
+        <Button
+                android:id="@+id/GifActivity"
+                style="@style/MyButton"
+                android:text="GifActivity"/>
+
+        <Button
+                android:id="@+id/AudioAc"
+                style="@style/MyButton"
+                android:text="AudioAc"/>
+   <Button
                 android:id="@+id/FingerprintIdentifyAc"
                 style="@style/MyButton"
                 android:text="FingerprintIdentifyAc"/>
