@@ -1,4 +1,4 @@
-package com.zncm.jmxandroid.view;
+package com.zncm.jmxandroid.view.pd;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -6,6 +6,8 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Path;
+import android.graphics.Rect;
+import android.graphics.RectF;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
@@ -19,7 +21,7 @@ import java.util.concurrent.CopyOnWriteArrayList;
  * Created by jiaomx on 2017/6/15.
  */
 
-public class PaintView extends View {
+public class PDPaintView extends View {
     Paint paint;
     Bitmap bitmap;
     Canvas canvas;
@@ -27,10 +29,13 @@ public class PaintView extends View {
     int color = Color.RED;
     float strokeWidth = 20;
 
+      Rect imgRectF = new Rect();
+
+
     CopyOnWriteArrayList<PaintPath> mUndoList = new CopyOnWriteArrayList<>();
 
 
-    public PaintView(Context context) {
+    public PDPaintView(Context context) {
         super(context);
         init();
     }
@@ -57,7 +62,7 @@ public class PaintView extends View {
     }
 
 
-    public PaintView(Context context, @Nullable AttributeSet attrs) {
+    public PDPaintView(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
         init();
     }
@@ -76,11 +81,22 @@ public class PaintView extends View {
         canvas = new Canvas(bitmap);
     }
 
+
     @Override
     public boolean onTouchEvent(MotionEvent event) {
         boolean flag = super.onTouchEvent(event);
         float x = event.getX();
         float y = event.getY();
+
+        if (x < imgRectF.left || x > imgRectF.right) {
+            return false;
+        }
+
+        if (y < imgRectF.top || y > imgRectF.bottom) {
+            return false;
+        }
+
+
         switch (event.getAction()) {
             case MotionEvent.ACTION_DOWN:
                 path = new Path();
@@ -107,6 +123,10 @@ public class PaintView extends View {
         return flag;
     }
 
+
+    public void setImgRectF(Rect imgRectF) {
+        this.imgRectF = imgRectF;
+    }
 
     public void undo() {
         if (mUndoList != null && mUndoList.size() > 0) {

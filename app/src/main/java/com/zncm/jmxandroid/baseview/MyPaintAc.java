@@ -1,7 +1,11 @@
 package com.zncm.jmxandroid.baseview;
 
+import android.graphics.RectF;
+import android.graphics.drawable.Drawable;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.annotation.RequiresApi;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
@@ -9,8 +13,9 @@ import android.widget.EditText;
 
 import com.zncm.jmxandroid.R;
 import com.zncm.jmxandroid.base.BaseAc;
-import com.zncm.jmxandroid.view.ColorSelView;
-import com.zncm.jmxandroid.view.PaintView;
+import com.zncm.jmxandroid.view.pd.PDColorSelView;
+import com.zncm.jmxandroid.view.pd.PDCropImageView;
+import com.zncm.jmxandroid.view.pd.PDPaintView;
 import com.zncm.jmxandroid.view.TextFloatView;
 
 /**
@@ -19,12 +24,25 @@ import com.zncm.jmxandroid.view.TextFloatView;
 
 public class MyPaintAc extends BaseAc {
     TextFloatView mTextFloatView;
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        final PaintView paintView = (PaintView) findViewById(R.id.mPaintView);
+        final PDPaintView paintView = (PDPaintView) findViewById(R.id.mPaintView);
+        final PDCropImageView mPDCropImageView = (PDCropImageView) findViewById(R.id.mPDCropImageView);
+
+
+        Drawable drawable = getDrawable(R.drawable.img1);
+        if (drawable!=null){
+            RectF imgRectF  = new RectF();
+            imgRectF.set(0,0,drawable.getIntrinsicWidth(),drawable.getIntrinsicHeight());
+            mPDCropImageView.setImgRectF(imgRectF);
+        }
+
+
+
         Button undo = (Button) findViewById(R.id.undo);
-        ColorSelView mColorSelView =  (ColorSelView) findViewById(R.id.mColorSelView);
+        PDColorSelView mColorSelView =  (PDColorSelView) findViewById(R.id.mColorSelView);
 
 
         undo.setOnClickListener(new View.OnClickListener() {
@@ -57,7 +75,7 @@ public class MyPaintAc extends BaseAc {
                 mTextFloatView.setText(text);
             }
         });
-        mColorSelView.setmOnColorSelListener(new ColorSelView.OnColorSelListener() {
+        mColorSelView.setmOnColorSelListener(new PDColorSelView.OnColorSelListener() {
             @Override
             public void onColorSelListener(int color) {
                 paintView.setColor(color);

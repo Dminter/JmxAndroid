@@ -59,6 +59,7 @@
         <activity android:name=".github.FingerprintIdentifyAc"/>
         <activity android:name=".github.GifActivity"/>
         <activity android:name=".github.PicEditActivity"/>
+        <activity android:name=".github.PopListActivity"/>
 
 
         <activity-alias android:name=".AddActivityShortcut"

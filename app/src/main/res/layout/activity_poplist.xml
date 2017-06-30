@@ -10,12 +10,20 @@
 
 
     <TextView
+            android:id="@+id/popList"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Hello World!"/>
 
-<com.zncm.jmxandroid.view.pd.PDColorSelView android:layout_width="match_parent"
-                                            android:layout_height="200dp"></com.zncm.jmxandroid.view.pd.PDColorSelView>
+
+
+
+    <android.support.v7.widget.RecyclerView
+
+            android:id="@+id/popRecyclerView"
+            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
 
 
 </LinearLayout>

@@ -1,4 +1,4 @@
-package com.zncm.jmxandroid.view;
+package com.zncm.jmxandroid.view.pd;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -17,12 +17,12 @@ import com.zncm.jmxandroid.R;
  * Created by jiaomx on 2017/6/15.
  */
 
-public class ColorSelView extends LinearLayout {
-    int colors[] = new int[]{0xFF000000, 0xFF9900FF, 0xFF0000FF, 0xFF00FF00, 0xFF00FFFF, 0xFFFF0000, 0xFFFF00FF, 0xFFFF6600, 0xFFFFFF00, 0xFFFFFFFF, 0xFF000000};
+public class PDColorSelView extends LinearLayout {
+    int colors[] = new int[]{0xFF000000, 0xFF9900FF, 0xFF0000FF, 0xFF00FF00, 0xFF00FFFF, 0xFFFF0000, 0xFFFF00FF, 0xFFFF6600};
     int selColor = colors[0];
 
-    int strokeWidth = 5; // 3dp 边框宽度
-    int roundRadius = 15; // 8dp 圆角半径
+    int strokeWidth = 4; // 3dp 边框宽度
+    int roundRadius = 20; // 8dp 圆角半径
     LinearLayout linearLayout;
 
     Context ctx;
@@ -30,7 +30,7 @@ public class ColorSelView extends LinearLayout {
     OnColorSelListener mOnColorSelListener;
 
 
-    public ColorSelView(Context context) {
+    public PDColorSelView(Context context) {
         super(context);
         ctx = context;
         init();
@@ -62,7 +62,7 @@ public class ColorSelView extends LinearLayout {
     @SuppressLint("WrongConstant")
     private ImageView drawRound(final int color) {
         ImageView imageView = new ImageView(ctx);
-        imageView.setLayoutParams(new LinearLayout.LayoutParams(60, 60));
+        imageView.setLayoutParams(new LinearLayout.LayoutParams(80, 80));
         imageView.setPadding(10, 10, 10, 10);
         int strokeColor = color;//边框颜色
         if (color != selColor) {
@@ -71,6 +71,7 @@ public class ColorSelView extends LinearLayout {
         int fillColor = color;//内部填充颜色
         GradientDrawable gd = new GradientDrawable();//创建drawable
         gd.setColor(fillColor);
+        gd.setGradientType(GradientDrawable.OVAL);
         gd.setCornerRadius(roundRadius);
         gd.setStroke(strokeWidth, strokeColor);
         imageView.setImageDrawable(gd);
@@ -79,9 +80,9 @@ public class ColorSelView extends LinearLayout {
             @Override
             public void onClick(View v) {
                 selColor = color;
-                if (mOnColorSelListener!=null){
+                if (mOnColorSelListener != null) {
 
-                mOnColorSelListener.onColorSelListener(selColor);
+                    mOnColorSelListener.onColorSelListener(selColor);
                 }
                 refreshView();
             }
@@ -89,14 +90,14 @@ public class ColorSelView extends LinearLayout {
         return imageView;
     }
 
-    public ColorSelView(Context context, @Nullable AttributeSet attrs) {
+    public PDColorSelView(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
         ctx = context;
         init();
     }
 
 
-    public interface OnColorSelListener{
+    public interface OnColorSelListener {
         void onColorSelListener(int color);
     }
 

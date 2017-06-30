@@ -16,6 +16,7 @@ import com.zncm.jmxandroid.droidplugin.MyActivity;
 import com.zncm.jmxandroid.github.FingerprintIdentifyAc;
 import com.zncm.jmxandroid.github.GifActivity;
 import com.zncm.jmxandroid.github.PicEditActivity;
+import com.zncm.jmxandroid.github.PopListActivity;
 import com.zncm.jmxandroid.hook.HookAActivity;
 import com.zncm.jmxandroid.mykotlin.MyKotlinDemo;
 import com.zncm.jmxandroid.mykotlin.MyKotlinListView;
@@ -53,53 +54,56 @@ public class MainActivity extends BaseAc implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
+            case R.id.PopListActivity:
+                startActivity(new Intent(ctx, PopListActivity.class));
+                break;
             case R.id.PicEditAc:
                 startActivity(new Intent(ctx, PicEditAc.class));
                 break;
-                case R.id.ColorSelViewAc:
+            case R.id.ColorSelViewAc:
                 startActivity(new Intent(ctx, ColorSelViewAc.class));
                 break;
-   case R.id.MyPaintAc:
+            case R.id.MyPaintAc:
                 startActivity(new Intent(ctx, MyPaintAc.class));
                 break;
 
-                case R.id.PicEditActivity:
+            case R.id.PicEditActivity:
                 startActivity(new Intent(ctx, PicEditActivity.class));
                 break;
 
-                case R.id.GifActivity:
+            case R.id.GifActivity:
                 startActivity(new Intent(ctx, GifActivity.class));
                 break;
-       case R.id.AudioAc:
+            case R.id.AudioAc:
                 startActivity(new Intent(ctx, AudioAc.class));
                 break;
 
 
-                case R.id.FingerprintIdentifyAc:
+            case R.id.FingerprintIdentifyAc:
                 startActivity(new Intent(ctx, FingerprintIdentifyAc.class));
                 break;
 
 
-                case R.id.FabAc:
+            case R.id.FabAc:
                 startActivity(new Intent(ctx, FabAc.class));
                 break;
 
-                case R.id.ZoomControlsAc:
+            case R.id.ZoomControlsAc:
                 startActivity(new Intent(ctx, ZoomControlsAc.class));
                 break;
-                case R.id.TabLayoutAc:
+            case R.id.TabLayoutAc:
                 startActivity(new Intent(ctx, TabLayoutAc.class));
                 break;
-                case R.id.MyKotlinListView:
+            case R.id.MyKotlinListView:
                 startActivity(new Intent(ctx, MyKotlinListView.class));
                 break;
-                case R.id.MyHandlerAcJ:
+            case R.id.MyHandlerAcJ:
                 startActivity(new Intent(ctx, MyHandlerAcJ.class));
                 break;
-                case R.id.MyHandlerAc:
+            case R.id.MyHandlerAc:
                 startActivity(new Intent(ctx, MyHandlerAc.class));
                 break;
-                case R.id.btn1:
+            case R.id.btn1:
                 startActivity(new Intent(ctx, ImgActivity.class));
                 break;
             case R.id.btn2:
@@ -145,7 +149,7 @@ public class MainActivity extends BaseAc implements View.OnClickListener {
             case R.id.AZViewActivity:
                 startActivity(new Intent(ctx, AZViewActivity.class));
                 break;
-                case R.id.MyKotlinDemo:
+            case R.id.MyKotlinDemo:
                 startActivity(new Intent(ctx, MyKotlinDemo.class));
                 break;
             default:

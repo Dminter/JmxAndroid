@@ -12,25 +12,30 @@
             android:layout_width="match_parent"
             android:orientation="horizontal"
             android:layout_alignParentBottom="true"
+            android:background="#333333"
+            android:gravity="center"
             android:layout_height="45dp">
 
-        <Button
+        <ImageView
                 android:id="@+id/edit"
                 android:text="edit"
                 android:layout_width="0dp"
                 android:layout_weight="1"
+                android:src="@drawable/edit_image_pen_tool_btn"
                 android:layout_height="wrap_content"/>
-        <Button
+        <ImageView
                 android:id="@+id/text"
                 android:text="text"
                 android:layout_width="0dp"
                 android:layout_weight="1"
+                android:src="@drawable/edit_image_text_tool_btn"
                 android:layout_height="wrap_content"/>
-        <Button
+        <ImageView
                 android:id="@+id/crop"
                 android:text="crop"
                 android:layout_width="0dp"
                 android:layout_weight="1"
+                android:src="@drawable/edit_image_crop_btn"
                 android:layout_height="wrap_content"/>
 
 
@@ -38,6 +43,7 @@
 
     <FrameLayout
 
+            android:id="@+id/flBase"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_above="@+id/bottomBar">
@@ -45,45 +51,117 @@
                 android:id="@+id/baseImageView"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/stickers_type_profession"/>
+                android:background="@color/material_amber_400"
+                android:src="@drawable/img1"/>
+        <RelativeLayout
+                android:visibility="gone"
+                android:id="@+id/rlCrop"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <com.zncm.jmxandroid.view.pd.PDCropImageView
+                    android:id="@+id/mPDCropImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            <com.zncm.jmxandroid.view.pd.crop.ClipImageLayout
+
+                    android:id="@+id/mClipImageLayout"
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:layout_height="match_parent"></com.zncm.jmxandroid.view.pd.crop.ClipImageLayout>
+
+
+            <RelativeLayout
+                    android:id="@+id/bottomOpCrop"
+                    android:layout_height="45dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+            >
+
+                <Button
+                        android:id="@+id/btnCancel"
+                        android:layout_width="wrap_content"
+                        android:text="取消"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="wrap_content"/>
+                <Button
+                        android:id="@+id/btnSure"
+                        android:layout_width="wrap_content"
+                        android:text="完成"
+                        android:layout_marginRight="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content"/>
+
+
+            </RelativeLayout>
+        </RelativeLayout>
 
         <com.zncm.jmxandroid.view.TextFloatView
                 android:id="@+id/mTextFloatView"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"/>
 
-        <RelativeLayout android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+
+        <RelativeLayout
+
+                android:id="@+id/rlPaint"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
             <RelativeLayout
                     android:id="@+id/bottomOp"
+                    android:layout_height="45dp"
                     android:layout_alignParentBottom="true"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-                <Button
-                        android:id="@+id/undo"
-                        android:text="undo"
-                        android:layout_centerVertical="true"
-                        android:layout_alignParentRight="true"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+            >
 
-                <com.zncm.jmxandroid.view.ColorSelView
+
+                <LinearLayout
+                        android:id="@+id/llRight"
+                        android:layout_width="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:layout_alignParentRight="true"
+                        android:layout_height="wrap_content">
+                    <View android:layout_width="2dp"
+                          android:layout_height="20dp"
+                          android:background="#333444"
+                    />
+
+
+                    <ImageView
+                            android:id="@+id/undo"
+                            android:text="undo"
+                            android:src="@drawable/edit_image_revoke_btn"
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <com.zncm.jmxandroid.view.pd.PDColorSelView
                         android:id="@+id/mColorSelView"
                         android:layout_width="wrap_content"
                         android:layout_centerVertical="true"
                         android:layout_alignParentLeft="true"
-                        android:layout_toLeftOf="@+id/undo"
+                        android:layout_toLeftOf="@+id/llRight"
                         android:layout_height="wrap_content">
-                </com.zncm.jmxandroid.view.ColorSelView>
+                </com.zncm.jmxandroid.view.pd.PDColorSelView>
 
 
             </RelativeLayout>
-            <com.zncm.jmxandroid.view.PaintView
+
+
+            <com.zncm.jmxandroid.view.pd.PDPaintView
                     android:id="@+id/mPaintView"
                     android:layout_width="match_parent"
                     android:layout_above="@+id/bottomOp"
                     android:layout_height="match_parent"/>
+
+
         </RelativeLayout>
 
 

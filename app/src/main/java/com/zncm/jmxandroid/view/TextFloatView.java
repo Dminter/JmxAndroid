@@ -53,6 +53,8 @@ public class TextFloatView extends View {
     boolean isFirst = true;
 
     boolean isBoxOp = true;
+    Rect imgRectF = new Rect();
+
 
 
     public TextFloatView(Context context) {
@@ -112,6 +114,16 @@ public class TextFloatView extends View {
         boolean flag = super.onTouchEvent(event);
         float x = event.getX();
         float y = event.getY();
+        if (x < imgRectF.left || x > imgRectF.right) {
+            return false;
+        }
+
+        if (y < imgRectF.top || y > imgRectF.bottom) {
+            return false;
+        }
+
+
+
         switch (event.getAction()) {
             case MotionEvent.ACTION_DOWN:
                 lastX = x;
@@ -164,5 +176,10 @@ public class TextFloatView extends View {
         this.color = color;
         textPaint.setColor(color);
         invalidate();
+    }
+
+
+    public void setImgRectF(Rect imgRectF) {
+        this.imgRectF = imgRectF;
     }
 }
