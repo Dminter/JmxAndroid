@@ -20,6 +20,15 @@
         android:orientation="vertical"
         android:padding="20dp">
         <Button
+                android:id="@+id/PaperDetailsActivity"
+                style="@style/MyButton"
+                android:text="PaperDetailsActivity"/>
+     <Button
+                android:id="@+id/BottomDlgActivity"
+                style="@style/MyButton"
+                android:text="BottomDlgActivity"/>
+
+        <Button
                 android:id="@+id/PopListActivity"
                 style="@style/MyButton"
                 android:text="PopListActivity"/>

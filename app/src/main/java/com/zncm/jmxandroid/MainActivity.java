@@ -21,7 +21,9 @@ import com.zncm.jmxandroid.hook.HookAActivity;
 import com.zncm.jmxandroid.mykotlin.MyKotlinDemo;
 import com.zncm.jmxandroid.mykotlin.MyKotlinListView;
 import com.zncm.jmxandroid.os.AudioAc;
+import com.zncm.jmxandroid.os.BottomDlgActivity;
 import com.zncm.jmxandroid.os.MyHandlerAc;
+import com.zncm.jmxandroid.os.PaperDetailsActivity;
 import com.zncm.jmxandroid.os.java.MyHandlerAcJ;
 import com.zncm.jmxandroid.support.FabAc;
 import com.zncm.jmxandroid.support.TabLayoutAc;
@@ -54,7 +56,14 @@ public class MainActivity extends BaseAc implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.PopListActivity:
+            case R.id.PaperDetailsActivity:
+                startActivity(new Intent(ctx, PaperDetailsActivity.class));
+                break;
+
+                case R.id.BottomDlgActivity:
+                startActivity(new Intent(ctx, BottomDlgActivity.class));
+                break;
+                case R.id.PopListActivity:
                 startActivity(new Intent(ctx, PopListActivity.class));
                 break;
             case R.id.PicEditAc:

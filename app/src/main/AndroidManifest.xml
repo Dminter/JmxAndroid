@@ -46,6 +46,8 @@
         <activity android:name=".os.MyHandlerAc"/>
         <activity android:name=".os.AudioAc"/>
         <activity android:name=".os.java.MyHandlerAcJ"/>
+        <activity android:name=".os.BottomDlgActivity"/>
+        <activity android:name=".os.PaperDetailsActivity"/>
 
         <activity android:name=".support.TabLayoutAc"/>
         <activity android:name=".support.FabAc"/>
