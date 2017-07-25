@@ -20,6 +20,31 @@
         android:orientation="vertical"
         android:padding="20dp">
         <Button
+                android:id="@+id/DlgActivity"
+                style="@style/MyButton"
+                android:text="DlgActivity"/>
+
+        <Button
+                android:id="@+id/RockerViewActivity"
+                style="@style/MyButton"
+                android:text="RockerViewActivity"/>
+
+        <Button
+                android:id="@+id/QQSportStepActivity"
+                style="@style/MyButton"
+                android:text="QQSportStepActivity"/>
+ <Button
+                android:id="@+id/Okhttp1Activity"
+                style="@style/MyButton"
+                android:text="Okhttp1Activity"/>
+
+
+        <Button
+                android:id="@+id/BehaviorActivity"
+                style="@style/MyButton"
+                android:text="BehaviorActivity"/>
+
+        <Button
                 android:id="@+id/PaperDetailsActivity"
                 style="@style/MyButton"
                 android:text="PaperDetailsActivity"/>

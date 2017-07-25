@@ -31,7 +31,14 @@
         <activity android:name=".ui.SmoothImgActivity"/>
         <activity android:name=".ui.ColorpickerviewActivity"/>
         <activity android:name=".ui.BaseViewActivity"/>
+        <activity android:name=".ui.QQSportStepActivity"/>
         <activity android:name=".ui.ToastyActivity"/>
+        <activity android:name=".ui.RockerViewActivity"/>
+
+
+
+
+
         <activity android:name=".volley.VolleyDemo"/>
         <activity android:name=".hook.ProxyActivity"/>
         <activity android:name=".activityshortcut.ActivityShortcut"/>
@@ -48,6 +55,8 @@
         <activity android:name=".os.java.MyHandlerAcJ"/>
         <activity android:name=".os.BottomDlgActivity"/>
         <activity android:name=".os.PaperDetailsActivity"/>
+        <activity android:name=".os.BehaviorActivity"/>
+        <activity android:name=".os.DlgActivity"/>
 
         <activity android:name=".support.TabLayoutAc"/>
         <activity android:name=".support.FabAc"/>
@@ -62,6 +71,7 @@
         <activity android:name=".github.GifActivity"/>
         <activity android:name=".github.PicEditActivity"/>
         <activity android:name=".github.PopListActivity"/>
+        <activity android:name=".github.Okhttp1Activity"/>
 
 
         <activity-alias android:name=".AddActivityShortcut"

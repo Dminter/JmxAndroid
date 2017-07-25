@@ -14,7 +14,7 @@ import com.zncm.jmxandroid.R;
 
 public abstract class BaseAc extends AppCompatActivity {
 
-    Toolbar toolbar;
+ public    Toolbar toolbar;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

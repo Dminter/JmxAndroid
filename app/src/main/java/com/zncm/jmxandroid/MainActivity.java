@@ -15,13 +15,16 @@ import com.zncm.jmxandroid.baseview.ZoomControlsAc;
 import com.zncm.jmxandroid.droidplugin.MyActivity;
 import com.zncm.jmxandroid.github.FingerprintIdentifyAc;
 import com.zncm.jmxandroid.github.GifActivity;
+import com.zncm.jmxandroid.github.Okhttp1Activity;
 import com.zncm.jmxandroid.github.PicEditActivity;
 import com.zncm.jmxandroid.github.PopListActivity;
 import com.zncm.jmxandroid.hook.HookAActivity;
 import com.zncm.jmxandroid.mykotlin.MyKotlinDemo;
 import com.zncm.jmxandroid.mykotlin.MyKotlinListView;
 import com.zncm.jmxandroid.os.AudioAc;
+import com.zncm.jmxandroid.os.BehaviorActivity;
 import com.zncm.jmxandroid.os.BottomDlgActivity;
+import com.zncm.jmxandroid.os.DlgActivity;
 import com.zncm.jmxandroid.os.MyHandlerAc;
 import com.zncm.jmxandroid.os.PaperDetailsActivity;
 import com.zncm.jmxandroid.os.java.MyHandlerAcJ;
@@ -32,6 +35,8 @@ import com.zncm.jmxandroid.ui.BaseViewActivity;
 import com.zncm.jmxandroid.ui.ColorpickerviewActivity;
 import com.zncm.jmxandroid.ui.GlobalLocalAct;
 import com.zncm.jmxandroid.ui.ImgActivity;
+import com.zncm.jmxandroid.ui.QQSportStepActivity;
+import com.zncm.jmxandroid.ui.RockerViewActivity;
 import com.zncm.jmxandroid.ui.SmoothImgActivity;
 import com.zncm.jmxandroid.ui.ToastyActivity;
 import com.zncm.jmxandroid.volley.VolleyDemo;
@@ -56,14 +61,30 @@ public class MainActivity extends BaseAc implements View.OnClickListener {
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
+            case R.id.DlgActivity:
+                startActivity(new Intent(ctx, DlgActivity.class));
+                break;
+            case R.id.RockerViewActivity:
+                startActivity(new Intent(ctx, RockerViewActivity.class));
+                break;
+
+                case R.id.QQSportStepActivity:
+                startActivity(new Intent(ctx, QQSportStepActivity.class));
+                break;
+            case R.id.Okhttp1Activity:
+                startActivity(new Intent(ctx, Okhttp1Activity.class));
+                break;
+            case R.id.BehaviorActivity:
+                startActivity(new Intent(ctx, BehaviorActivity.class));
+                break;
             case R.id.PaperDetailsActivity:
                 startActivity(new Intent(ctx, PaperDetailsActivity.class));
                 break;
 
-                case R.id.BottomDlgActivity:
+            case R.id.BottomDlgActivity:
                 startActivity(new Intent(ctx, BottomDlgActivity.class));
                 break;
-                case R.id.PopListActivity:
+            case R.id.PopListActivity:
                 startActivity(new Intent(ctx, PopListActivity.class));
                 break;
             case R.id.PicEditAc:

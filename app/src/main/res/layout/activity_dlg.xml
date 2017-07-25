@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@color/colorBg"
+>
+
+    <include layout="@layout/toolbar"/>
+    <Button
+            android:text="dlg1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dlg1"/>
+    <Button
+            android:text="dlg2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dlg2"/>
+    <Button
+            android:text="dlg3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dlg3"/>
+    <Button
+            android:text="dlg4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dlg4"/>
+    <Button
+            android:text="dlg5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dlg5"/>  <Button
+            android:text="dlg6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dlg6"/>  <Button
+            android:text="dlg7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dlg7"/>  <Button
+            android:text="dlg8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dlg8"/>
+    <Button
+            android:text="dlg9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dlg9"/>
+
+
+</LinearLayout>
