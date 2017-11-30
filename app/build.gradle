@@ -21,21 +21,30 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.android.support:appcompat-v7:25.3.1'
     compile 'com.android.support:recyclerview-v7:25.3.1'
     compile 'com.android.support:design:25.3.1'
-
     compile 'com.android.volley:volley:1.0.0'
     compile 'com.jakewharton:butterknife:8.5.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
     compile 'com.github.GrenderG:Toasty:1.2.3'
     compile project(path: ':imlibrary')
-    compile project(path: ':DroidPlugin')
     compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
     compile 'org.jetbrains.anko:anko-sdk25:0.10.0-beta-1'
     compile 'com.wei.android.lib:fingerprintidentify:1.1.4'
     compile 'pl.droidsonroids.gif:android-gif-drawable:1.2.7'
     compile 'com.squareup.okhttp3:okhttp:3.8.1'
     compile project(path: ':imageeditlibrary')
+    compile "io.reactivex.rxjava2:rxjava:$rootProject.ext.rxjava2Version"
+    compile "com.squareup.retrofit2:retrofit:$rootProject.ext.retrofit2Version"
+    compile "com.squareup.retrofit2:converter-scalars:$rootProject.ext.retrofit2Version"
+    compile "com.squareup.retrofit2:converter-gson:$rootProject.ext.retrofit2Version"
+    compile "com.squareup.retrofit2:adapter-rxjava2:$rootProject.ext.retrofit2Version"
+    compile 'com.jakewharton.retrofit:retrofit2-rxjava2-adapter:1.0.0'
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+    compile "com.trello.rxlifecycle2:rxlifecycle:$rootProject.ext.rxlifecycle"
+    //compile "com.trello.rxlifecycle2:rxlifecycle-android:$rootProject.ext.rxlifecycle"
+    compile "com.trello.rxlifecycle2:rxlifecycle-components:$rootProject.ext.rxlifecycle"
 }

@@ -8,6 +8,7 @@ import com.android.volley.toolbox.Volley;
 import com.morgoo.droidplugin.PluginApplication;
 import com.zncm.jmxandroid.hook.HookStartActivityUtils;
 import com.zncm.jmxandroid.hook.ProxyActivity;
+import com.zncm.jmxandroid.rxjava2_retrofit.Utils;
 
 /**
  * Created by jiaomx on 2017/5/3.
@@ -36,6 +37,8 @@ public class MyApp extends PluginApplication {
 //        }
 
         requestQueue = Volley.newRequestQueue(getApplicationContext());
+
+        Utils.init(ctx);
 
     }
 

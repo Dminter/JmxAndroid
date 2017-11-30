@@ -28,6 +28,7 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".ui.UtilsActivity"/>
         <activity android:name=".ui.ImgActivity"/>
         <activity android:name=".ui.GlobalLocalAct"/>
         <activity android:name=".ui.SmoothImgActivity"/>
