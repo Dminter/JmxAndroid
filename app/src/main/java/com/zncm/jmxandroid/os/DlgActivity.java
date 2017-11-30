@@ -295,6 +295,8 @@ public class DlgActivity extends BaseAc {
         dialog.show();
     }
 
+
+
     private void dlg1() {
         final AlertDialog.Builder dialog = new AlertDialog.Builder(ctx) {
             @Override
