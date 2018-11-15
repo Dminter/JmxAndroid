@@ -1,1 +1,1 @@
-include ':app', ':imlibrary', ':imlibrary2', ':DroidPlugin', ':imageeditlibrary'
+include ':app'

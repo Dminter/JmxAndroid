@@ -98,6 +98,9 @@ public class NetworkUtils {
     }
 
 
+    /**
+     *ping 域名
+     */
     public static boolean pingDomain(String domain) {
         ShellUtils.CommandResult result = ShellUtils.execCmd("ping -c 1 -w 1 "+domain, false);
         boolean ret = result.result == 0;

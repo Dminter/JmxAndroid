@@ -8,6 +8,8 @@ import com.zncm.jmxandroid.R;
 import com.zncm.jmxandroid.base.BaseAc;
 import com.zncm.jmxandroid.rxjava2_retrofit.NetworkUtils;
 
+import java.util.Random;
+
 public class UtilsActivity extends BaseAc {
     Context ctx;
 
@@ -37,6 +39,27 @@ public class UtilsActivity extends BaseAc {
         sbInfo.append("pingDomain：").append(NetworkUtils.pingDomain("www.baidu.com")).append("\n");
         sbInfo.append("getIPAddress：").append(NetworkUtils.getIPAddress(true)).append("\n");
         sbInfo.append("getNetworkType：").append(NetworkUtils.getNetworkType()).append("\n");
+        sbInfo.append("getNetworkOperatorName：").append(NetworkUtils.getNetworkOperatorName()).append("\n");
+        sbInfo.append("isWifiAvailable：").append(NetworkUtils.isWifiAvailable()).append("\n");
+        /**
+         *setWifiEnabled
+         */
+//        NetworkUtils.setWifiEnabled(new Random().nextBoolean());
+//        sbInfo.append("isWifiAvailable：").append(NetworkUtils.isWifiAvailable()).append("\n");
+        sbInfo.append("is4G：").append(NetworkUtils.is4G()).append("\n");
+        sbInfo.append("getDataEnabled：").append(NetworkUtils.getDataEnabled()).append("\n");
+        /**
+         *setDataEnabled
+         */
+//        NetworkUtils.setDataEnabled(new Random().nextBoolean());
+//        sbInfo.append("getDataEnabled：").append(NetworkUtils.getDataEnabled()).append("\n");
+        sbInfo.append("isAvailableByPing：").append(NetworkUtils.isAvailableByPing()).append("\n");
+        sbInfo.append("isConnected：").append(NetworkUtils.isConnected()).append("\n");
+
+        /**
+         *openWirelessSettings
+         */
+//        NetworkUtils.openWirelessSettings();
 
 
         mTextView.setText(sbInfo);

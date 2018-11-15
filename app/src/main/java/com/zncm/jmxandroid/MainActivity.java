@@ -91,7 +91,7 @@ public class MainActivity extends BaseAc implements View.OnClickListener {
                 startActivity(new Intent(ctx, PopListActivity.class));
                 break;
             case R.id.PicEditAc:
-                startActivity(new Intent(ctx, PicEditAc.class));
+//                startActivity(new Intent(ctx, PicEditAc.class));
                 break;
             case R.id.ColorSelViewAc:
                 startActivity(new Intent(ctx, ColorSelViewAc.class));
@@ -101,7 +101,7 @@ public class MainActivity extends BaseAc implements View.OnClickListener {
                 break;
 
             case R.id.PicEditActivity:
-                startActivity(new Intent(ctx, PicEditActivity.class));
+//                startActivity(new Intent(ctx, PicEditActivity.class));
                 break;
 
             case R.id.GifActivity:
